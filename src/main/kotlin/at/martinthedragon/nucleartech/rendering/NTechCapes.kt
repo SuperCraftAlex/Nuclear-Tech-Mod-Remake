@@ -100,6 +100,7 @@ object NTechCapes {
             JulekJulas to CapeLocation(ntm("julekjulas_gif")),
             TheOriginalGolem to CapeLocation(ntm("golem")),
             KauaiMoho to CapeLocation(ntm("6litchh")),
+            alex_s168 to CapeLocation(ntm("alex_s168")),
 
             HbMinecraft to CapeLocation(ntm("hbminecraft"), ntm("hbminecraft_polaroid")),
             Drillgon to CapeLocation(ntm("drillgon")),
