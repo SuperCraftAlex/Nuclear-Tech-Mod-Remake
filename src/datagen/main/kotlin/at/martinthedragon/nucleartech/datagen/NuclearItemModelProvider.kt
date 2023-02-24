@@ -119,6 +119,7 @@ class NuclearItemModelProvider(
         simpleItem(NTechItems.verticiumIngot.get())
         simpleItem(NTechItems.weidaniumIngot.get())
         simpleItem(NTechItems.whitePhosphorusIngot.get())
+        simpleItem(NTechItems.feuIngot.get())
 
         simpleItem(NTechItems.actinium227Billet.get())
         simpleItem(NTechItems.americium241Billet.get())
@@ -172,6 +173,7 @@ class NuclearItemModelProvider(
         simpleItem(NTechItems.uraniumFuelBillet.get())
         simpleItem(NTechItems.yharoniteBillet.get())
         simpleItem(NTechItems.zirconiumBillet.get())
+        simpleItem(NTechItems.feuBillet.get())
 
         simpleItem(NTechItems.asbestosSheet.get())
         simpleItem(NTechItems.coke.get())

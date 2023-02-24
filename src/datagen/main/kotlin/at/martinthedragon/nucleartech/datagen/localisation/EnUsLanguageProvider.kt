@@ -230,6 +230,8 @@ class EnUsLanguageProvider(dataGenerator: DataGenerator) : NuclearLanguageProvid
         addItemDesc(NTechItems.euphemiumIngot, "A very special and yet strange element")
         addItem(NTechItems.whitePhosphorusIngot, "White Phosphorus Bar")
 
+        addItem(NTechItems.feuIngot, "FeU-Ingot")
+
         addItem(NTechItems.semtexBar, "Semtex Bar")
         addItemDesc(
             NTechItems.semtexBar,
@@ -260,6 +262,8 @@ class EnUsLanguageProvider(dataGenerator: DataGenerator) : NuclearLanguageProvid
         addItem(NTechItems.flashgoldBillet, "Flashgold Billet")
         addItem(NTechItems.flashleadBillet, "Flashlead Billet")
         addItemDesc(NTechItems.flashleadBillet, "The lattice decays, causing antimatter-matter\nannihilation reactions, causing the release of\npions, decaying into muons, catalyzing fusion of\nthe nuclei, creating the new element.\nPlease try to keep up.")
+
+        addItem(NTechItems.feuBillet, "FeU-Billet")
 
         addItem(NTechItems.mercuryDroplet, "Mercury Droplet")
         addItem(NTechItems.mercuryBottle, "Mercury Bottle")
@@ -1310,6 +1314,8 @@ class EnUsLanguageProvider(dataGenerator: DataGenerator) : NuclearLanguageProvid
         addMaterial(weidanium, "Weidanium")
         addMaterial(whitePhosphorus, "White Phosphorus")
         addMaterial(yellowcake, "Yellowcake")
+
+        addMaterial(feu, "FeU")
     }
 
     override val spawnEggFormat = "%s Spawn Egg"

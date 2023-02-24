@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "feu_billet",
+  "ingredients": [
+    {
+      "item": "nucleartech:feu_ingot"
+    }
+  ],
+  "result": {
+    "item": "nucleartech:feu_billet",
+    "count": 4
+  }
+}

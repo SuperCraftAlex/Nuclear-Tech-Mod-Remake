@@ -245,6 +245,8 @@ class DeDeLanguageProvider(dataGenerator: DataGenerator) : NuclearLanguageProvid
         addItemDesc(NTechItems.euphemiumIngot, "Ein sehr spezielles und doch seltsames Element")
         addItem(NTechItems.whitePhosphorusIngot, "Weiße Phosphortafel")
 
+        addItem(NTechItems.feuIngot, "FeU-Barren")
+
         addItem(NTechItems.semtexBar, "Semtextafel")
         addItemDesc(
             NTechItems.semtexBar,
@@ -293,6 +295,8 @@ class DeDeLanguageProvider(dataGenerator: DataGenerator) : NuclearLanguageProvid
         addItem(NTechItems.flashgoldBillet, "Flammgoldbillet")
         addItem(NTechItems.flashleadBillet, "Flammbleibillet")
         addItemDesc(NTechItems.flashleadBillet, "Das Gitter zerfällt, verursacht Antimaterie-Materie-\nVernichtungsreaktionen, was wiederum die Freisetzung von Pionen\nverursacht, die in Myonen zerfallen, was die Fusion der\nKerne katalysiert, und somit das neue Element erzeugt.\nVersuch bitte, Schritt zu halten.")
+
+        addItem(NTechItems.feuBillet, "FeU-Billet")
 
         addItem(NTechItems.mercuryDroplet, "Quecksilbertröpfchen")
         addItem(NTechItems.mercuryBottle, "Quecksilberflasche")
@@ -1371,6 +1375,8 @@ class DeDeLanguageProvider(dataGenerator: DataGenerator) : NuclearLanguageProvid
         addMaterial(weidanium, "Weidanium")
         addMaterial(whitePhosphorus, "Weißer Phosphor")
         addMaterial(yellowcake, "Yellowcake")
+
+        addMaterial(feu, "FeU")
     }
 
     override val spawnEggFormat = "%s-Spawn-Ei"

@@ -198,6 +198,7 @@ class ItemTagProvider(
         tag(INGOTS_URANIUM_FUEL).add(NTechItems.uraniumFuelIngot)
         tag(INGOTS_VERTICIUM).add(NTechItems.verticiumIngot)
         tag(INGOTS_WEIDANIUM).add(NTechItems.weidaniumIngot)
+        tag(INGOTS_FEU).add(NTechItems.feuIngot)
         return@with
     }
 
@@ -229,6 +230,7 @@ class ItemTagProvider(
         tag(BILLETS_URANIUM).add(NTechItems.uraniumBillet)
         tag(BILLETS_URANIUM_FUEL).add(NTechItems.uraniumFuelBillet)
         tag(BILLETS_ZIRCONIUM).add(NTechItems.zirconiumBillet)
+        tag(BILLETS_FEU).add(NTechItems.feuBillet)
         return@with
     }
 

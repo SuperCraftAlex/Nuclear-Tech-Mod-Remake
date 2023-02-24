@@ -262,6 +262,8 @@ object NTechTags {
         val INGOTS_VERTICIUM = forgeTag("ingots/verticium")
         val INGOTS_WEIDANIUM = forgeTag("ingots/weidanium")
 
+        val INGOTS_FEU = forgeTag("ingots/feu")
+
         val BILLETS = forgeTag("billets")
         val BILLETS_ACTINIUM = forgeTag("billets/actinium")
         val BILLETS_AMERICIUM = forgeTag("billets/americium")
@@ -289,6 +291,8 @@ object NTechTags {
         val BILLETS_URANIUM = forgeTag("billets/uranium")
         val BILLETS_URANIUM_FUEL = forgeTag("billets/uranium_fuel")
         val BILLETS_ZIRCONIUM = forgeTag("billets/zirconium")
+
+        val BILLETS_FEU = forgeTag("billets/feu")
 
         val COKE = forgeTag("coal_coke")
 

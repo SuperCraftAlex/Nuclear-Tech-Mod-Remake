@@ -100,6 +100,8 @@ class NuclearRecipeProvider(generator: DataGenerator) : RecipeProvider(generator
         ShapelessRecipeBuilder(NTechItems.pu238BeBillet.get(), 2).requires(NTechItems.pu238Billet.get()).requires(NTechItems.berylliumBillet.get()).group(NTechItems.pu238BeBillet.id.path).unlockedBy("has_pu238_billet", has(NTechItems.pu238Billet.get())).save(consumer, ntm("pu238be_billet_from_mixing_isotope_billets"))
         ShapelessRecipeBuilder(NTechItems.pu238BeBillet.get(), 6).requires(NTechItems.pu238Billet.get(), 3).requires(NTechItems.berylliumBillet.get(), 3).group(NTechItems.pu238BeBillet.id.path).unlockedBy("has_pu238_billet", has(NTechItems.pu238Billet.get())).save(consumer, ntm("pu238be_billet_from_mixing_isotope_billets_extra"))
 
+        ShapelessRecipeBuilder(NTechItems.feuBillet.get(), 4).requires(NTechItems.feuIngot.get()).group(NTechItems.feuBillet.id.path).unlockedBy("has_uranium_fuel_billet", has(NTechItems.feuIngot.get())).save(consumer, ntm("feu_billet_from_feu_ingot"))
+
         RuleBasedRecipeBuilder.create {
             forModTagsAndMaterials()
             addRule { tagGroup -> // blocks to ingots
@@ -253,6 +255,7 @@ class NuclearRecipeProvider(generator: DataGenerator) : RecipeProvider(generator
         rbmkRod(NTechItems.rbmkRodZfbBismuth.get(), NTechItems.bismuthZfbBillet.get(), consumer)
         rbmkRod(NTechItems.rbmkRodZfbPu241.get(), NTechItems.pu241ZfbBillet.get(), consumer)
         rbmkRod(NTechItems.rbmkRodZfbAmMix.get(), NTechItems.reactorGradeAmericiumZfbBillet.get(), consumer)
+        rbmkRod(NTechItems.rbmkRodFeU.get(), NTechItems.feuBillet.get(), consumer)
 
         // Templates
 
@@ -400,6 +403,8 @@ class NuclearRecipeProvider(generator: DataGenerator) : RecipeProvider(generator
 
     private fun blasting(actualConsumer: Consumer<FinishedRecipe>) {
         val consumer = SubDirectories.BLASTING.createPipe(actualConsumer)
+
+        blastingRecipe(Tags.Items.INGOTS_IRON, NTechTags.Items.NUGGETS_URANIUM, NTechItems.feuIngot.get(), 2F, 1, "iron_ingot", "uranium_nugget", consumer)
 
         blastingRecipe(Tags.Items.INGOTS_IRON, Items.COAL, NTechItems.steelIngot.get(), .25F, 2, "iron_ingot", consumer)
         blastingRecipe(Tags.Items.INGOTS_COPPER, Tags.Items.DUSTS_REDSTONE, NTechItems.redCopperIngot.get(), .25F, 2, "copper_ingot", "redstone", consumer)
