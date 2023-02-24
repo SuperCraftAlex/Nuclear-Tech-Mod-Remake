@@ -5,6 +5,7 @@ import at.martinthedragon.nucleartech.RegistriesAndLifecycle.BLOCKS
 import at.martinthedragon.nucleartech.RegistriesAndLifecycle.FLUIDS
 import at.martinthedragon.nucleartech.RegistriesAndLifecycle.ITEMS
 import at.martinthedragon.nucleartech.delegate.LateRegistryProperty
+import at.martinthedragon.nucleartech.mc
 import at.martinthedragon.nucleartech.ntm
 import at.martinthedragon.nucleartech.registerK
 import net.minecraft.core.BlockSource
@@ -37,6 +38,13 @@ object NTechFluids {
     val uraniumHexafluoride = registerFluid("uranium_hexafluoride", FluidAttributes.builder(ntm("fluid/uranium_hexafluoride_still"), ntm("fluid/uranium_hexafluoride_flow")).color(0xE6D1CEBEu.toInt()).gaseous().sound(null), GaseousFluid::Source, GaseousFluid::Flowing, ::BucketItem, propertiesModifier = { tickRate(10) })
     val corium = registerFluid("corium_fluid", FluidAttributes.builder(ntm("fluid/corium_still"), ntm("fluid/corium_flow")).density(100_000).temperature(3000 - ABSOLUTE_ZERO), CoriumFluid::Source, CoriumFluid::Flowing, ::BucketItem, propertiesModifier = { tickRate(30) }, fluidBlockProperties = BlockBehaviour.Properties.of(Material.WATER).jumpFactor(0.01F).speedFactor(0.01F).noCollission().strength(1000F).noDrops())
     val volcanicLava = registerFluid("volcanic_lava", FluidAttributes.builder(ntm("fluid/volcanic_lava_still"), ntm("fluid/volcanic_lava_flow")).luminosity(15).density(3200).viscosity(7000).temperature(900 - ABSOLUTE_ZERO).sound(SoundEvents.BUCKET_FILL_LAVA, SoundEvents.BUCKET_EMPTY_LAVA), VolcanicLavaFluid::Source, VolcanicLavaFluid::Flowing, ::BucketItem, propertiesModifier = { tickRate(36).levelDecreasePerBlock(2) }, fluidBlockProperties = BlockBehaviour.Properties.of(Material.WATER).noCollission().strength(1000F).noDrops().lightLevel { 15 }.hasPostProcess { _, _, _ -> true }, liquidBlockCreator = ::VolcanicLavaBlock)
+
+    val liquid_feu = registerFluid("liquid_feu", FluidAttributes.builder(ntm("fluid/liquid_feu"), ntm("fluid/liquid_feu")).color(0xE6D1CEBEu.toInt()), ::Source, ::Flowing, ::BucketItem, propertiesModifier = { tickRate(30).levelDecreasePerBlock(5) })
+    val airified_water = registerFluid("airified_water", FluidAttributes.builder(ntm("fluid/airified_water"), ntm("fluid/airified_water")), ::Source, ::Flowing, ::BucketItem, propertiesModifier = { tickRate(30).levelDecreasePerBlock(5) })
+    val radeoactive_water = registerFluid("radeoactive_water", FluidAttributes.builder(mc("block/water_still"), mc("block/water_flow")).overlay( mc("blocks/water_overlay")).color(0xbadecfBEU.toInt()), ::Source, ::Flowing, ::BucketItem, propertiesModifier = { tickRate(30).levelDecreasePerBlock(5) })
+    val instable_air = registerFluid("instable_air", FluidAttributes.builder(ntm("fluid/instable_air"), ntm("fluid/instable_air")).density(-100).gaseous().temperature(24).sound(null))
+    val waterized_lm = registerFluid("waterized_lm", FluidAttributes.builder(ntm("fluid/waterized_lm"), ntm("fluid/waterized_lm")), ::Source, ::Flowing, ::BucketItem, propertiesModifier = { tickRate(30).levelDecreasePerBlock(5) })
+
 
     // specifying a default argument doesn't work because of generics
     fun registerFluid(name: String, attributes: FluidAttributes.Builder) = registerFluid(name, attributes, ::Source, ::Flowing, ::BucketItem)

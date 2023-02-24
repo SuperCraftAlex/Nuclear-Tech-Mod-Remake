@@ -197,6 +197,11 @@ class DeDeLanguageProvider(dataGenerator: DataGenerator) : NuclearLanguageProvid
         addBlock(NTechFluids.uraniumHexafluoride.block, "Uranhexafluorid")
         addBlock(NTechFluids.corium.block, "Corium")
         addBlock(NTechFluids.volcanicLava.block, "Vulkanische Lava")
+        addBlock(NTechFluids.liquid_feu.block, "Liquid Iron Uranium Compound")
+        addBlock(NTechFluids.airified_water.block, "Airified Water")
+        addBlock(NTechFluids.radeoactive_water.block, "Radeoactive Water")
+        addBlock(NTechFluids.instable_air.block, "Instable Air")
+        addBlock(NTechFluids.waterized_lm.block, "Waterized Light Matter")
 
         addBlock(NTechBlocks.decoRbmkBlock, "RBMK Dekorationsblock")
         addBlock(NTechBlocks.decoRbmkSmoothBlock, "Glatter RBMK Dekorationsblock")
@@ -934,6 +939,10 @@ class DeDeLanguageProvider(dataGenerator: DataGenerator) : NuclearLanguageProvid
         addItem(NTechFluids.uraniumHexafluoride.bucket, "Uranhexafluorideimer")
         addItem(NTechFluids.corium.bucket, "Coriumeimer")
         addItem(NTechFluids.volcanicLava.bucket, "Vulkanische-Lava-Eimer")
+        addItem(NTechFluids.liquid_feu.bucket, "Liquid-Iron-Uranium-Compound-Eimer")
+        addItem(NTechFluids.airified_water.bucket, "Airified-Water-Eimer")
+        addItem(NTechFluids.radeoactive_water.bucket, "Radeoactive-Water-Eimer")
+        addItem(NTechFluids.waterized_lm.bucket, "Waterized-Light Matter-Eimer")
 
         addItem(NTechItems.creativeNuclearExplosionSpawner, "Atomexplosionserzeuger")
         addItemDesc(NTechItems.creativeNuclearExplosionSpawner, "Hergestellt von CakeCo\nEast Spawn Rd 2, 68-419 RetroMC")

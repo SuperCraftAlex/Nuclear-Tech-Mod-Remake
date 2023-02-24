@@ -549,6 +549,12 @@ object NTechTags {
         val STEAM = forgeTag("steam")
         val URANIUM_HEXAFLUORIDE = forgeTag("uranium_hexafluoride")
         val VOLCANIC_LAVA = forgeTag("volcanic_lava")
+
+        val LIQUID_FEU = forgeTag("liquid_feu")
+        val AIRIFIED_WATER = forgeTag("airified_water")
+        val RADEOACTIVE_WATER = forgeTag("radeoactive_water")
+        val INSTABLE_AIR = forgeTag("instable_air")
+        val WATERIZED_LM = forgeTag("waterized_lm")
     }
 }
 

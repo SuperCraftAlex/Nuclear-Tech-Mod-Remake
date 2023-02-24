@@ -5,6 +5,7 @@ import at.martinthedragon.nucleartech.NuclearTech
 import at.martinthedragon.nucleartech.block.NTechBlocks
 import at.martinthedragon.nucleartech.extensions.appendToPath
 import at.martinthedragon.nucleartech.fallout.FalloutTransformation
+import at.martinthedragon.nucleartech.fluid.NTechFluids
 import at.martinthedragon.nucleartech.ntm
 import com.google.gson.GsonBuilder
 import com.google.gson.JsonObject
@@ -60,6 +61,8 @@ class FalloutTransformationsProvider(private val generator: DataGenerator) : Dat
         builder().from(NTechTags.Blocks.ORES_URANIUM, NTechBlocks.deepslateUraniumOre.get(), NTechBlocks.netherUraniumOre.get(), NTechBlocks.scorchedUraniumOre.get(), NTechBlocks.scorchedDeepslateUraniumOre.get(), NTechBlocks.scorchedNetherUraniumOre.get()).results(NTechBlocks.schrabidiumOre.get()).chance(.01F).alternative(NTechBlocks.scorchedUraniumOre.get()).save(consumer)
         builder().from(NTechBlocks.deepslateUraniumOre.get()).results(NTechBlocks.deepslateSchrabidiumOre.get()).chance(.01F).alternative(NTechBlocks.scorchedDeepslateUraniumOre.get()).save(consumer)
         builder().from(NTechBlocks.netherUraniumOre.get()).results(NTechBlocks.netherSchrabidiumOre.get()).chance(.01F).alternative(NTechBlocks.scorchedNetherUraniumOre.get()).save(consumer)
+
+        builder().from(Blocks.WATER).results(NTechFluids.radeoactive_water.block.get()).save(consumer)
     }
 
     private fun builder() = Builder()

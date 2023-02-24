@@ -209,6 +209,11 @@ class EnUsLanguageProvider(dataGenerator: DataGenerator) : NuclearLanguageProvid
         addBlock(NTechFluids.uraniumHexafluoride.block, "Uranium Hexafluoride")
         addBlock(NTechFluids.corium.block, "Corium")
         addBlock(NTechFluids.volcanicLava.block, "Volcanic Lava")
+        addBlock(NTechFluids.liquid_feu.block, "Liquid Iron Uranium Compound")
+        addBlock(NTechFluids.airified_water.block, "Airified Water")
+        addBlock(NTechFluids.radeoactive_water.block, "Radeoactive Water")
+        addBlock(NTechFluids.instable_air.block, "Instable Air")
+        addBlock(NTechFluids.waterized_lm.block, "Waterized Light Matter")
 
         addItem(NTechItems.rawThorium, "Raw Thorium")
         addItem(NTechItems.rawRareEarth, "Raw Rare Earth")
@@ -874,6 +879,10 @@ class EnUsLanguageProvider(dataGenerator: DataGenerator) : NuclearLanguageProvid
         addItem(NTechFluids.uraniumHexafluoride.bucket, "Uranium Hexafluoride Bucket")
         addItem(NTechFluids.corium.bucket, "Corium Bucket")
         addItem(NTechFluids.volcanicLava.bucket, "Volcanic Lava Bucket")
+        addItem(NTechFluids.liquid_feu.bucket, "Liquid Iron Uranium Compound Bucket")
+        addItem(NTechFluids.airified_water.bucket, "Airified Water Bucket")
+        addItem(NTechFluids.radeoactive_water.bucket, "Radeoactive Water Bucket")
+        addItem(NTechFluids.waterized_lm.bucket, "Waterized Light Matter Bucket")
 
         addItem(NTechItems.creativeNuclearExplosionSpawner, "Nuclear Explosion Spawner")
         addItemDesc(NTechItems.creativeNuclearExplosionSpawner, "Manufactured by CakeCo\nEast Spawn Rd 2, 68-419 RetroMC")
