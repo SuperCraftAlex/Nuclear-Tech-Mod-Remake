@@ -731,6 +731,10 @@ class NuclearItemModelProvider(
         simpleItem(NTechItems.rbmkRodZfbPu241.get())
         simpleItem(NTechItems.rbmkRodZfbAmMix.get())
         simpleItem(NTechItems.rbmkRodDrx.get())
+        simpleItem(NTechItems.rbmkRodRs.get())
+        simpleItem(NTechItems.rbmkRodIa.get())
+        simpleItem(NTechItems.rbmkRodLm.get())
+        simpleItem(NTechItems.rbmkRodFeU.get())
 
         simpleItem(NTechItems.meltdownTool.get())
 

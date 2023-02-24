@@ -688,6 +688,10 @@ class EnUsLanguageProvider(dataGenerator: DataGenerator) : NuclearLanguageProvid
         addItem(NTechItems.rbmkPelletZfbAmMix, "Fuel Grade Americium ZFB Pellet")
         addItem(NTechItems.rbmkPelletZfbBismuth, "Bismuth ZFB Pellet")
         addItem(NTechItems.rbmkPelletZfbPu241, "Pu-241 ZFB Pellet")
+        addItem(NTechItems.rbmkPelletRs, "RS Fuel Pellet")
+        addItem(NTechItems.rbmkPelletIa, "IA Fuel Pellet")
+        addItem(NTechItems.rbmkPelletLm, "LM Fuel Pellet")
+        addItem(NTechItems.rbmkPelletFeU, "FeU Fuel Pellet")
 
         addItem(NTechItems.emptyRBMKRod, "Empty RBMK Fuel Rod")
         addItem(NTechItems.rbmkRodBalefire, "Balefire RBMK Fuel Rod")
@@ -721,6 +725,10 @@ class EnUsLanguageProvider(dataGenerator: DataGenerator) : NuclearLanguageProvid
         addItem(NTechItems.rbmkRodZfbAmMix, "Fuel Grade Americium RBMK ZFB Rod")
         addItem(NTechItems.rbmkRodZfbBismuth, "Bismuth RBMK ZFB Rod")
         addItem(NTechItems.rbmkRodZfbPu241, "Pu-241 RBMK ZFB Rod")
+        addItem(NTechItems.rbmkRodRs, "RS RBMK Fuel Rod")
+        addItem(NTechItems.rbmkRodIa, "IA RBMK Neutron Source")
+        addItem(NTechItems.rbmkRodLm, "LM RBMK Fuel Rod")
+        addItem(NTechItems.rbmkRodFeU, "FeU RBMK Fuel Rod")
 
         addItem(NTechItems.meltdownTool, "Dyatlov Instant Meltdown Applicator")
 
@@ -1081,6 +1089,10 @@ class EnUsLanguageProvider(dataGenerator: DataGenerator) : NuclearLanguageProvid
         add(LangKeys.RBMK_NAME_PELLET_ZFB_AM_MIX, "Zirconium Fast Breeder - HEP-241#MEA")
         add(LangKeys.RBMK_NAME_PELLET_ZFB_BISMUTH, "Zirconium Fast Breeder - LEU/HEP-241#Bi")
         add(LangKeys.RBMK_NAME_PELLET_ZFB_PU241, "Zirconium Fast Breeder - HEU-235/HEP-240#Pu-241")
+        add(LangKeys.RBMK_NAME_PELLET_RS, "Radioactive Shard Fuel")
+        add(LangKeys.RBMK_NAME_PELLET_IA, "Instable Air Neutron Source")
+        add(LangKeys.RBMK_NAME_PELLET_LM, "Light Matter Fuel")
+        add(LangKeys.RBMK_NAME_PELLET_FEU, "Uranified Iron Fuel")
         add(LangKeys.RBMK_NEUTRON_FAST, "Fast Neutrons")
         add(LangKeys.RBMK_NEUTRON_SLOW, "Slow Neutrons")
         add(LangKeys.RBMK_NEUTRON_ANY, "All Neutrons")

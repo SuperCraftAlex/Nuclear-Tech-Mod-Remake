@@ -748,6 +748,10 @@ class DeDeLanguageProvider(dataGenerator: DataGenerator) : NuclearLanguageProvid
         addItem(NTechItems.rbmkPelletZfbAmMix, "Reaktorfähiges Americium ZFB-Pellet")
         addItem(NTechItems.rbmkPelletZfbBismuth, "Bismut ZFB-Pellet")
         addItem(NTechItems.rbmkPelletZfbPu241, "Pu-241 ZFB-Pellet")
+        addItem(NTechItems.rbmkPelletRs, "RS-Kernbrennstoffpellet")
+        addItem(NTechItems.rbmkPelletIa, "IA-Neutronenquellenpellet")
+        addItem(NTechItems.rbmkPelletLm, "LM-Kernbrennstoffpellet")
+        addItem(NTechItems.rbmkPelletFeU, "FeU-Kernbrennstoffpellet")
 
         addItem(NTechItems.emptyRBMKRod, "Leere RBMK Kernbrennstoffstäbe")
         addItem(NTechItems.rbmkRodBalefire, "Balefire-RBMK-Kernbrennstoff")
@@ -781,6 +785,10 @@ class DeDeLanguageProvider(dataGenerator: DataGenerator) : NuclearLanguageProvid
         addItem(NTechItems.rbmkRodZfbAmMix, "Reaktorfähiges Americium RBMK-ZFB")
         addItem(NTechItems.rbmkRodZfbBismuth, "Bismut RBMK-ZFB")
         addItem(NTechItems.rbmkRodZfbPu241, "Pu-241 RBMK-ZFB")
+        addItem(NTechItems.rbmkRodRs, "RS-RBMK-Kernbrennstoff")
+        addItem(NTechItems.rbmkRodIa, "IA-RBMK-Neutronenquelle")
+        addItem(NTechItems.rbmkRodLm, "LM-RBMK-Kernbrennstoff")
+        addItem(NTechItems.rbmkRodFeU, "FeU-RBMK-Kernbrennstoff")
 
         addItem(NTechItems.meltdownTool, "Djatlow Sofortiger Kernschmelzeinduzierer")
 
@@ -1142,6 +1150,10 @@ class DeDeLanguageProvider(dataGenerator: DataGenerator) : NuclearLanguageProvid
         add(LangKeys.RBMK_NAME_PELLET_ZFB_AM_MIX, "Zirconium Fast Breeder - HEP-241#MEA")
         add(LangKeys.RBMK_NAME_PELLET_ZFB_BISMUTH, "Zirconium Fast Breeder - LEU/HEP-241#Bi")
         add(LangKeys.RBMK_NAME_PELLET_ZFB_PU241, "Zirconium Fast Breeder - HEU-235/HEP-240#Pu-241")
+        add(LangKeys.RBMK_NAME_PELLET_RS, "Radioactive Shard Fuel")
+        add(LangKeys.RBMK_NAME_PELLET_IA, "Instable Air Neutron Source")
+        add(LangKeys.RBMK_NAME_PELLET_LM, "Light Matter Fuel")
+        add(LangKeys.RBMK_NAME_PELLET_FEU, "Uranified Iron Fuel")
         add(LangKeys.RBMK_NEUTRON_FAST, "Schnelle Neutronen")
         add(LangKeys.RBMK_NEUTRON_SLOW, "Langsame Neutronen")
         add(LangKeys.RBMK_NEUTRON_ANY, "Alle Neutronen")

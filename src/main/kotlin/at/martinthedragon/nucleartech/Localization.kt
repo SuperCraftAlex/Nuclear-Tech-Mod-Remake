@@ -200,6 +200,11 @@ object LangKeys {
     val RBMK_NAME_PELLET_ZFB_AM_MIX = of(CAT_RBMK, "name.pellet.zfb_am_mix")
     val RBMK_NAME_PELLET_ZFB_BISMUTH = of(CAT_RBMK, "name.pellet.zfb_bismuth")
     val RBMK_NAME_PELLET_ZFB_PU241 = of(CAT_RBMK, "name.pellet.zfb_pu241")
+    val RBMK_NAME_PELLET_RS = of(CAT_RBMK, "name.pellet.rs")
+    val RBMK_NAME_PELLET_IA = of(CAT_RBMK, "name.pellet.ia")
+    val RBMK_NAME_PELLET_LM = of(CAT_RBMK, "name.pellet.lm")
+    val RBMK_NAME_PELLET_FEU = of(CAT_RBMK, "name.pellet.feu")
+
     val RBMK_NEUTRON_FAST = of(CAT_RBMK, "neutron.fast")
     val RBMK_NEUTRON_SLOW = of(CAT_RBMK, "neutron.slow")
     val RBMK_NEUTRON_ANY = of(CAT_RBMK, "neutron.any")
