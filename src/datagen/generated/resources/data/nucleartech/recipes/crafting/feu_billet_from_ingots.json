@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "feu_billet",
+  "pattern": [
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "nucleartech:feu_ingot"
+    }
+  },
+  "result": {
+    "item": "nucleartech:feu_billet",
+    "count": 3
+  }
+}

@@ -41,7 +41,7 @@ object NTechFluids {
 
     val liquid_feu = registerFluid("liquid_feu", FluidAttributes.builder(ntm("fluid/liquid_feu"), ntm("fluid/liquid_feu")).color(0xE6D1CEBEu.toInt()), ::Source, ::Flowing, ::BucketItem, propertiesModifier = { tickRate(30).levelDecreasePerBlock(5) })
     val airified_water = registerFluid("airified_water", FluidAttributes.builder(ntm("fluid/airified_water"), ntm("fluid/airified_water")), ::Source, ::Flowing, ::BucketItem, propertiesModifier = { tickRate(30).levelDecreasePerBlock(5) })
-    val radeoactive_water = registerFluid("radeoactive_water", FluidAttributes.builder(mc("block/water_still"), mc("block/water_flow")).overlay( mc("blocks/water_overlay")).color(0xbadecfBEU.toInt()), ::Source, ::Flowing, ::BucketItem, propertiesModifier = { tickRate(30).levelDecreasePerBlock(5) })
+    val radeoactive_water = registerFluid("radeoactive_water", FluidAttributes.builder(mc("block/water_still"), mc("block/water_flow")).overlay( mc("block/water_overlay")).color(0xbadecfBEU.toInt()), ::Source, ::Flowing, ::BucketItem, propertiesModifier = { tickRate(30).levelDecreasePerBlock(5) })
     val instable_air = registerFluid("instable_air", FluidAttributes.builder(ntm("fluid/instable_air"), ntm("fluid/instable_air")).density(-100).gaseous().temperature(24).sound(null))
     val waterized_lm = registerFluid("waterized_lm", FluidAttributes.builder(ntm("fluid/waterized_lm"), ntm("fluid/waterized_lm")), ::Source, ::Flowing, ::BucketItem, propertiesModifier = { tickRate(30).levelDecreasePerBlock(5) })
 

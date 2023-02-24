@@ -199,6 +199,7 @@ class ItemTagProvider(
         tag(INGOTS_VERTICIUM).add(NTechItems.verticiumIngot)
         tag(INGOTS_WEIDANIUM).add(NTechItems.weidaniumIngot)
         tag(INGOTS_FEU).add(NTechItems.feuIngot)
+        tag(INGOTS_FEU).add(NTechItems.fepuIngot)
         return@with
     }
 

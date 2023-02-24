@@ -12,6 +12,7 @@ import net.minecraft.world.item.Item
 import net.minecraft.world.item.ItemStack
 import net.minecraft.world.item.TooltipFlag
 import net.minecraft.world.level.Level
+import java.awt.Color
 import java.util.function.Supplier
 import kotlin.math.*
 
@@ -30,6 +31,7 @@ class RBMKRodItem(
     val diffusion: Double = 0.2,
     val neutronType: RBMKFluxReceiver.NeutronType = RBMKFluxReceiver.NeutronType.SLOW,
     val releaseType: RBMKFluxReceiver.NeutronType = RBMKFluxReceiver.NeutronType.FAST,
+    val cherenkovColor: Color? = null,
     val fullName: TranslationKey = pellet?.get()?.fullName ?: throw NullPointerException("No full name for RBMK rod specified"),
 ) : Item(properties.stacksTo(1)) {
     fun burn(stack: ItemStack, fluxIn: Double, reactivityMod: Double = 1.0): Double {
@@ -158,6 +160,12 @@ class RBMKRodItem(
             add(LangKeys.RBMK_ROD_HEAT_HULL.format((getHullHeat(stack) * 10.0).toInt() / 10.0).red())
             add(LangKeys.RBMK_ROD_HEAT_CORE.format((getCoreHeat(stack) * 10.0).toInt() / 10.0).red())
             add(LangKeys.RBMK_ROD_MELTING_POINT.format("$meltingPoint°C").darkRed())
+
+            if(cherenkovColor != null) add(LangKeys.RBMK_ROD_CHERENKOV_COLOR.format(
+                    "${cherenkovColor.red}, " +
+                    "${cherenkovColor.green}, " +
+                    "${cherenkovColor.blue}"
+            ).yellow())
         }
     }
 

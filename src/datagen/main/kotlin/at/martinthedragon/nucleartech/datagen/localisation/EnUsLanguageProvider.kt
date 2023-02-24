@@ -230,7 +230,7 @@ class EnUsLanguageProvider(dataGenerator: DataGenerator) : NuclearLanguageProvid
         addItemDesc(NTechItems.euphemiumIngot, "A very special and yet strange element")
         addItem(NTechItems.whitePhosphorusIngot, "White Phosphorus Bar")
 
-        addItem(NTechItems.feuIngot, "FeU-Ingot")
+        addItem(NTechItems.fepuIngot, "FePu-Ingot")
 
         addItem(NTechItems.semtexBar, "Semtex Bar")
         addItemDesc(
@@ -1108,7 +1108,9 @@ class EnUsLanguageProvider(dataGenerator: DataGenerator) : NuclearLanguageProvid
         add(LangKeys.RBMK_NAME_PELLET_RS, "Radioactive Shard Fuel")
         add(LangKeys.RBMK_NAME_PELLET_IA, "Instable Air Neutron Source")
         add(LangKeys.RBMK_NAME_PELLET_LM, "Light Matter Fuel")
-        add(LangKeys.RBMK_NAME_PELLET_FEU, "Uranified Iron Fuel")
+        add(LangKeys.RBMK_NAME_PELLET_FEU, "Ferrouranium")
+        add(LangKeys.RBMK_NAME_PELLET_FEPU, "Ferroplutonium")
+
         add(LangKeys.RBMK_NEUTRON_FAST, "Fast Neutrons")
         add(LangKeys.RBMK_NEUTRON_SLOW, "Slow Neutrons")
         add(LangKeys.RBMK_NEUTRON_ANY, "All Neutrons")
@@ -1145,6 +1147,7 @@ class EnUsLanguageProvider(dataGenerator: DataGenerator) : NuclearLanguageProvid
         add(LangKeys.RBMK_SCREEN_TYPE_FUEL_TEMPERATURE, "Monitor average fuel temperature")
         add(LangKeys.RBMK_SCREEN_TYPE_NONE, "Off")
         add(LangKeys.RBMK_SCREEN_TYPE_ROD_EXTRACTION, "Monitor average control rod extraction")
+        add(LangKeys.RBMK_ROD_CHERENKOV_COLOR, "Cherenkov Radiation Color: %s")
 
         add(LangKeys.SIREN_TRACK_LOOP, "Type: Loop")
         add(LangKeys.SIREN_TRACK_ONCE, "Type: Play Once")

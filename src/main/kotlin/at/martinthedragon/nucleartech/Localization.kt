@@ -242,6 +242,7 @@ object LangKeys {
     val RBMK_SCREEN_TYPE_FUEL_TEMPERATURE = of(CAT_RBMK, "screen.type.fuel_temperature") // 1 int
     val RBMK_SCREEN_TYPE_NONE = of(CAT_RBMK, "screen.type.none") // 1 int
     val RBMK_SCREEN_TYPE_ROD_EXTRACTION = of(CAT_RBMK, "screen.type.rod_extraction") // 1 int
+    val RBMK_ROD_CHERENKOV_COLOR = of(CAT_RBMK, "rod.cherenkov_color") // 1 string
 
     val SIREN_TRACK_LOOP = of(CAT_SIREN_TRACK, "loop")
     val SIREN_TRACK_ONCE = of(CAT_SIREN_TRACK, "once")

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "fepu_ingot",
+  "ingredients": [
+    {
+      "item": "nucleartech:fepu_billet"
+    },
+    {
+      "item": "nucleartech:fepu_billet"
+    },
+    {
+      "item": "nucleartech:fepu_billet"
+    }
+  ],
+  "result": {
+    "item": "nucleartech:fepu_ingot",
+    "count": 2
+  }
+}

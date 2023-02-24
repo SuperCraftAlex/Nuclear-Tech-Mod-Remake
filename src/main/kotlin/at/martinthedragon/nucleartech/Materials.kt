@@ -126,7 +126,8 @@ object Materials {
     val whitePhosphorus = add(MG(block = BI.whitePhosphorusBlock, ingot = I.whitePhosphorusIngot))
     val yellowcake = add(MG(block = BI.yellowcakeBlock, ingot = I.yellowcake))
 
-    val feu = add(MG(ingot = I.feuIngot))
+    val feu = add(MG(ingot = I.feuIngot, billet = I.feuBillet))
+    val fepu = add(MG(ingot = I.fepuIngot, billet = I.fepuBillet))
 
     private fun add(group: MaterialGroup): MaterialGroup {
         allMaterials += group

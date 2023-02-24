@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "nucleartech:feu_ingot"
+    "nucleartech:feu_ingot",
+    "nucleartech:fepu_ingot"
   ]
 }

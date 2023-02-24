@@ -120,6 +120,7 @@ class NuclearItemModelProvider(
         simpleItem(NTechItems.weidaniumIngot.get())
         simpleItem(NTechItems.whitePhosphorusIngot.get())
         simpleItem(NTechItems.feuIngot.get())
+        simpleItem(NTechItems.fepuIngot.get())
 
         simpleItem(NTechItems.actinium227Billet.get())
         simpleItem(NTechItems.americium241Billet.get())

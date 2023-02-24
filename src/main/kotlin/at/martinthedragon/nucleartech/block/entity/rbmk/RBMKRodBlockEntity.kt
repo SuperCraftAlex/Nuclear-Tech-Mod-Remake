@@ -10,6 +10,8 @@ import at.martinthedragon.nucleartech.fluid.NTechFluids
 import at.martinthedragon.nucleartech.item.RBMKRodItem
 import at.martinthedragon.nucleartech.menu.NTechContainerMenu
 import at.martinthedragon.nucleartech.menu.rbmk.RBMKRodMenu
+import at.martinthedragon.nucleartech.serialization.loadItemsFromTagToList
+import at.martinthedragon.nucleartech.serialization.saveItemsToTag
 import at.martinthedragon.nucleartech.world.ChunkRadiation
 import net.minecraft.core.BlockPos
 import net.minecraft.core.Direction
@@ -22,6 +24,7 @@ import net.minecraft.world.level.Level
 import net.minecraft.world.level.block.Blocks
 import net.minecraft.world.level.block.entity.BlockEntityType
 import net.minecraft.world.level.block.state.BlockState
+import java.awt.Color
 
 open class RBMKRodBlockEntity(type: BlockEntityType<out RBMKRodBlockEntity>, pos: BlockPos, state: BlockState) : InventoryRBMKBaseBlockEntity(type, pos, state), RBMKFluxReceiver {
     constructor(pos: BlockPos, state: BlockState) : this(BlockEntityTypes.rbmkRodBlockEntityType.get(), pos, state)
@@ -30,7 +33,7 @@ open class RBMKRodBlockEntity(type: BlockEntityType<out RBMKRodBlockEntity>, pos
     override val soundLoopEvent: SoundEvent get() = throw UnsupportedOperationException("RBMK has no sound loop")
     override val soundLoopStateMachine = SoundLoopBlockEntity.NoopStateMachine(@Suppress("LeakingThis") this)
 
-    override val mainInventory: NonNullList<ItemStack> = NonNullList.withSize(1, ItemStack.EMPTY)
+    public override val mainInventory: NonNullList<ItemStack> = NonNullList.withSize(1, ItemStack.EMPTY)
 
     override fun isItemValid(slot: Int, stack: ItemStack) = slot == 0 && stack.item is RBMKRodItem
 
@@ -100,6 +103,7 @@ open class RBMKRodBlockEntity(type: BlockEntityType<out RBMKRodBlockEntity>, pos
     }
 
     var clientCherenkovLevel = 0.0
+
     val clientIsEmittingCherenkov get() = clientCherenkovLevel > 0
 
     private val clientCherenkovValues = DoubleArray(20)
@@ -239,6 +243,8 @@ open class RBMKRodBlockEntity(type: BlockEntityType<out RBMKRodBlockEntity>, pos
         putBoolean("HasRod", hasRod)
         putDouble("FluxFast", fluxFast)
         putDouble("FluxSlow", fluxSlow)
+
+        saveItemsToTag(this, mainInventory)
     }
 
     override fun handleContinuousUpdatePacket(tag: CompoundTag) {
@@ -246,6 +252,8 @@ open class RBMKRodBlockEntity(type: BlockEntityType<out RBMKRodBlockEntity>, pos
         hasRod = tag.getBoolean("HasRod")
         fluxFast = tag.getDouble("FluxFast")
         fluxSlow = tag.getDouble("FluxSlow")
+
+        loadItemsFromTagToList(tag, mainInventory)
     }
 
     override val consoleType = RBMKConsoleBlockEntity.Column.Type.FUEL

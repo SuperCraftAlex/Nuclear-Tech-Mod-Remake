@@ -22,6 +22,7 @@ import net.minecraft.world.item.Rarity
 import net.minecraft.world.item.crafting.RecipeType
 import net.minecraftforge.common.ForgeSpawnEggItem
 import net.minecraftforge.registries.RegistryObject
+import java.awt.Color
 
 @Suppress("unused")
 object NTechItems {
@@ -119,8 +120,7 @@ object NTechItems {
     val electroniumIngot = ITEMS.registerK("electronium_ingot") { Item(PARTS_TAB_PROP) }
     val osmiridiumIngot = ITEMS.registerK("osmiridium_ingot") { Item(PARTS_TAB_PROP_RARE) }
     val whitePhosphorusIngot = ITEMS.registerK("white_phosphorus_ingot") { Item(PARTS_TAB_PROP) }
-    // TODO: FePu ingot!!!!!!!!!!!
-
+    val fepuIngot = ITEMS.registerK("fepu_ingot") { Item(PARTS_TAB_PROP) }
     val feuIngot = ITEMS.registerK("feu_ingot") { Item(PARTS_TAB_PROP) }
 
     val semtexBar = ITEMS.registerK("semtex_bar") { AutoTooltippedItem(Properties().tab(CreativeTabs.Parts).food(FoodProperties.Builder().nutrition(4).saturationMod(0.5f).build())) }
@@ -708,7 +708,7 @@ object NTechItems {
     val emptyRBMKRod = ITEMS.registerK("empty_rbmk_rod") { Item(Properties().tab(CreativeTabs.Items)) }
     val rbmkRodUeu = ITEMS.registerK("rbmk_rod_ueu") { RBMKRodItem(Properties().tab(CreativeTabs.Items), rbmkPelletUeu, yield = 100_000_000.0, reactivity = 15.0, burnFunc = RBMKRodItem.BurnFunction.LOGARITHMIC, depletionFunc = RBMKRodItem.DepleteFunction.RAISING_SLOPE, heat = 0.65, meltingPoint = 2865.0) }
     val rbmkRodMeu = ITEMS.registerK("rbmk_rod_meu") { RBMKRodItem(Properties().tab(CreativeTabs.Items), rbmkPelletMeu, yield = 100_000_000.0, reactivity = 20.0, burnFunc = RBMKRodItem.BurnFunction.LOGARITHMIC, depletionFunc = RBMKRodItem.DepleteFunction.RAISING_SLOPE, heat = 0.65, meltingPoint = 2865.0) }
-    val rbmkRodHeu233 = ITEMS.registerK("rbmk_rod_heu233") { RBMKRodItem(Properties().tab(CreativeTabs.Items), rbmkPelletHeu233, yield = 100_000_000.0, reactivity = 27.5, burnFunc = RBMKRodItem.BurnFunction.LINEAR, depletionFunc = RBMKRodItem.DepleteFunction.GENTLE_SLOPE, heat = 1.25, meltingPoint = 2865.0) }
+    val rbmkRodHeu233 = ITEMS.registerK("rbmk_rod_heu233") { RBMKRodItem(Properties().tab(CreativeTabs.Items), rbmkPelletHeu233, yield = 100_000_000.0, reactivity = 27.5, burnFunc = RBMKRodItem.BurnFunction.LINEAR, depletionFunc = RBMKRodItem.DepleteFunction.GENTLE_SLOPE, heat = 1.25, meltingPoint = 2865.0, cherenkovColor = Color.GREEN) }
     val rbmkRodHeu235 = ITEMS.registerK("rbmk_rod_heu235") { RBMKRodItem(Properties().tab(CreativeTabs.Items), rbmkPelletHeu235, yield = 100_000_000.0, reactivity = 50.0, burnFunc = RBMKRodItem.BurnFunction.SQUARE_ROOT, depletionFunc = RBMKRodItem.DepleteFunction.GENTLE_SLOPE, heat = 1.0, meltingPoint = 2865.0) }
     val rbmkRodThMeu = ITEMS.registerK("rbmk_rod_thmeu") { RBMKRodItem(Properties().tab(CreativeTabs.Items), rbmkPelletThMeu, yield = 100_000_000.0, reactivity = 20.0, burnFunc = RBMKRodItem.BurnFunction.PLATEAU, depletionFunc = RBMKRodItem.DepleteFunction.BOOSTED_SLOPE, heat = 0.65, meltingPoint = 3350.0) }
     val rbmkRodLep = ITEMS.registerK("rbmk_rod_lep") { RBMKRodItem(Properties().tab(CreativeTabs.Items), rbmkPelletLep, yield = 100_000_000.0, reactivity = 35.0, burnFunc = RBMKRodItem.BurnFunction.LOGARITHMIC, depletionFunc = RBMKRodItem.DepleteFunction.RAISING_SLOPE, heat = 0.75, meltingPoint = 2744.0) }
@@ -740,8 +740,8 @@ object NTechItems {
     val rbmkRodRs = ITEMS.registerK("rbmk_rod_rs") { RBMKRodItem(Properties().tab(CreativeTabs.Items), rbmkPelletRs, yield = 100_000_000.0, reactivity = 10.0, burnFunc = RBMKRodItem.BurnFunction.LOGARITHMIC, depletionFunc = RBMKRodItem.DepleteFunction.RAISING_SLOPE, heat = 0.3, meltingPoint = 1603.0) }
     val rbmkRodIa = ITEMS.registerK("rbmk_rod_ia") { RBMKRodItem(Properties().tab(CreativeTabs.Items), rbmkPelletIa, yield = 100_000_000.0, reactivity = 30.0, selfRate = 20.0, burnFunc = RBMKRodItem.BurnFunction.SQUARE_ROOT, depletionFunc = RBMKRodItem.DepleteFunction.GENTLE_SLOPE, heat = 0.8, meltingPoint = 3247.0) }
     val rbmkRodLm = ITEMS.registerK("rbmk_rod_lm") { RBMKRodItem(Properties().tab(CreativeTabs.Items), rbmkPelletLm, yield = 100_000_000.0, reactivity = 42.0, burnFunc = RBMKRodItem.BurnFunction.SQUARE_ROOT, depletionFunc = RBMKRodItem.DepleteFunction.GENTLE_SLOPE, heat = 1.13, meltingPoint = 3200.0, neutronType = RBMKFluxReceiver.NeutronType.FAST) }
-    val rbmkRodFeU = ITEMS.registerK("rbmk_rod_feu") { RBMKRodItem(Properties().tab(CreativeTabs.Items), rbmkPelletFeU, yield = 100_000_000.0, reactivity = 12.0, burnFunc = RBMKRodItem.BurnFunction.LOGARITHMIC, depletionFunc = RBMKRodItem.DepleteFunction.RAISING_SLOPE, heat = 0.28, meltingPoint = 1503.0) }
-    val rbmkRodFePu = ITEMS.registerK("rbmk_rod_fepu") { RBMKRodItem(Properties().tab(CreativeTabs.Items), rbmkPelletFePu, yield = 100_000_000.0, reactivity = 32.0, burnFunc = RBMKRodItem.BurnFunction.LOGARITHMIC, depletionFunc = RBMKRodItem.DepleteFunction.RAISING_SLOPE, heat = 0.32, meltingPoint = 1644.0) }
+    val rbmkRodFeU = ITEMS.registerK("rbmk_rod_feu") { RBMKRodItem(Properties().tab(CreativeTabs.Items), rbmkPelletFeU, yield = 100_000_000.0, reactivity = 12.0, burnFunc = RBMKRodItem.BurnFunction.LOGARITHMIC, depletionFunc = RBMKRodItem.DepleteFunction.RAISING_SLOPE, heat = 0.28, meltingPoint = 1103.0) }
+    val rbmkRodFePu = ITEMS.registerK("rbmk_rod_fepu") { RBMKRodItem(Properties().tab(CreativeTabs.Items), rbmkPelletFePu, yield = 100_000_000.0, reactivity = 32.0, burnFunc = RBMKRodItem.BurnFunction.LOGARITHMIC, depletionFunc = RBMKRodItem.DepleteFunction.RAISING_SLOPE, heat = 0.32, meltingPoint = 1644.0, cherenkovColor = Color.RED) }
 
     val meltdownTool = ITEMS.registerK("dyatlov") { MeltdownToolItem(Properties().tab(CreativeTabs.Items).stacksTo(1)) }
 

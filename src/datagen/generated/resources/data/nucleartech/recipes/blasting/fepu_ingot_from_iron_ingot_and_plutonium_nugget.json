@@ -1,0 +1,14 @@
+{
+  "type": "nucleartech:blasting",
+  "first_ingredient": {
+    "tag": "forge:ingots/iron"
+  },
+  "second_ingredient": {
+    "tag": "forge:nuggets/plutonium"
+  },
+  "result": {
+    "item": "nucleartech:fepu_ingot",
+    "count": 1
+  },
+  "experience": 2.0
+}

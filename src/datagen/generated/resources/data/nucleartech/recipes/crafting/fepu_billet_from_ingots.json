@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "fepu_billet",
+  "pattern": [
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "nucleartech:fepu_ingot"
+    }
+  },
+  "result": {
+    "item": "nucleartech:fepu_billet",
+    "count": 3
+  }
+}

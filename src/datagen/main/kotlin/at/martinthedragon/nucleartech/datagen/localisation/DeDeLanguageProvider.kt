@@ -244,8 +244,8 @@ class DeDeLanguageProvider(dataGenerator: DataGenerator) : NuclearLanguageProvid
         addItem(NTechItems.actiniumIngot, "Actinium-227-Barren")
         addItemDesc(NTechItems.euphemiumIngot, "Ein sehr spezielles und doch seltsames Element")
         addItem(NTechItems.whitePhosphorusIngot, "Weiße Phosphortafel")
-
         addItem(NTechItems.feuIngot, "FeU-Barren")
+        addItem(NTechItems.fepuIngot, "FePu-Barren")
 
         addItem(NTechItems.semtexBar, "Semtextafel")
         addItemDesc(
@@ -1169,7 +1169,9 @@ class DeDeLanguageProvider(dataGenerator: DataGenerator) : NuclearLanguageProvid
         add(LangKeys.RBMK_NAME_PELLET_RS, "Radioactive Shard Fuel")
         add(LangKeys.RBMK_NAME_PELLET_IA, "Instable Air Neutron Source")
         add(LangKeys.RBMK_NAME_PELLET_LM, "Light Matter Fuel")
-        add(LangKeys.RBMK_NAME_PELLET_FEU, "Uranified Iron Fuel")
+        add(LangKeys.RBMK_NAME_PELLET_FEU, "Ferrouranium")
+        add(LangKeys.RBMK_NAME_PELLET_FEPU, "Ferroplutonium")
+
         add(LangKeys.RBMK_NEUTRON_FAST, "Schnelle Neutronen")
         add(LangKeys.RBMK_NEUTRON_SLOW, "Langsame Neutronen")
         add(LangKeys.RBMK_NEUTRON_ANY, "Alle Neutronen")
@@ -1206,6 +1208,7 @@ class DeDeLanguageProvider(dataGenerator: DataGenerator) : NuclearLanguageProvid
         add(LangKeys.RBMK_SCREEN_TYPE_FUEL_TEMPERATURE, "Überwache durschnittliche Brennstofftemperatur")
         add(LangKeys.RBMK_SCREEN_TYPE_NONE, "Aus")
         add(LangKeys.RBMK_SCREEN_TYPE_ROD_EXTRACTION, "Überwache durschnittliche Steuerstaböffnung")
+        add(LangKeys.RBMK_ROD_CHERENKOV_COLOR, "Cherenkov Radiation Farbe: %s")
 
         add(LangKeys.SIREN_TRACK_LOOP, "Typ: Endlosschleife")
         add(LangKeys.SIREN_TRACK_ONCE, "Typ: Einmal abspielen")

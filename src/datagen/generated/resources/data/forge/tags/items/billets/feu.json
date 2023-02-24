@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "nucleartech:feu_billet"
+    "nucleartech:feu_billet",
+    "nucleartech:fepu_billet"
   ]
 }
