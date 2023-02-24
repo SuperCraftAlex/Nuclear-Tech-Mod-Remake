@@ -231,6 +231,7 @@ class ItemTagProvider(
         tag(BILLETS_URANIUM_FUEL).add(NTechItems.uraniumFuelBillet)
         tag(BILLETS_ZIRCONIUM).add(NTechItems.zirconiumBillet)
         tag(BILLETS_FEU).add(NTechItems.feuBillet)
+        tag(BILLETS_FEU).add(NTechItems.fepuBillet)
         return@with
     }
 

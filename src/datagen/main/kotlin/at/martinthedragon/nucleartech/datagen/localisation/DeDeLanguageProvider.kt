@@ -297,6 +297,7 @@ class DeDeLanguageProvider(dataGenerator: DataGenerator) : NuclearLanguageProvid
         addItemDesc(NTechItems.flashleadBillet, "Das Gitter zerfällt, verursacht Antimaterie-Materie-\nVernichtungsreaktionen, was wiederum die Freisetzung von Pionen\nverursacht, die in Myonen zerfallen, was die Fusion der\nKerne katalysiert, und somit das neue Element erzeugt.\nVersuch bitte, Schritt zu halten.")
 
         addItem(NTechItems.feuBillet, "FeU-Billet")
+        addItem(NTechItems.fepuBillet, "FePu-Billet")
 
         addItem(NTechItems.mercuryDroplet, "Quecksilbertröpfchen")
         addItem(NTechItems.mercuryBottle, "Quecksilberflasche")
@@ -761,6 +762,7 @@ class DeDeLanguageProvider(dataGenerator: DataGenerator) : NuclearLanguageProvid
         addItem(NTechItems.rbmkPelletIa, "IA-Neutronenquellenpellet")
         addItem(NTechItems.rbmkPelletLm, "LM-Kernbrennstoffpellet")
         addItem(NTechItems.rbmkPelletFeU, "FeU-Kernbrennstoffpellet")
+        addItem(NTechItems.rbmkPelletFePu, "FePu-Kernbrennstoffpellet")
 
         addItem(NTechItems.emptyRBMKRod, "Leere RBMK Kernbrennstoffstäbe")
         addItem(NTechItems.rbmkRodBalefire, "Balefire-RBMK-Kernbrennstoff")
@@ -798,6 +800,7 @@ class DeDeLanguageProvider(dataGenerator: DataGenerator) : NuclearLanguageProvid
         addItem(NTechItems.rbmkRodIa, "IA-RBMK-Neutronenquelle")
         addItem(NTechItems.rbmkRodLm, "LM-RBMK-Kernbrennstoff")
         addItem(NTechItems.rbmkRodFeU, "FeU-RBMK-Kernbrennstoff")
+        addItem(NTechItems.rbmkRodFePu, "FePu-RBMK-Kernbrennstoff")
 
         addItem(NTechItems.meltdownTool, "Djatlow Sofortiger Kernschmelzeinduzierer")
 

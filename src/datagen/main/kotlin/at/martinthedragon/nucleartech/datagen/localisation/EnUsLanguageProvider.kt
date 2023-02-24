@@ -264,6 +264,7 @@ class EnUsLanguageProvider(dataGenerator: DataGenerator) : NuclearLanguageProvid
         addItemDesc(NTechItems.flashleadBillet, "The lattice decays, causing antimatter-matter\nannihilation reactions, causing the release of\npions, decaying into muons, catalyzing fusion of\nthe nuclei, creating the new element.\nPlease try to keep up.")
 
         addItem(NTechItems.feuBillet, "FeU-Billet")
+        addItem(NTechItems.fepuBillet, "FePu-Billet")
 
         addItem(NTechItems.mercuryDroplet, "Mercury Droplet")
         addItem(NTechItems.mercuryBottle, "Mercury Bottle")
@@ -701,6 +702,7 @@ class EnUsLanguageProvider(dataGenerator: DataGenerator) : NuclearLanguageProvid
         addItem(NTechItems.rbmkPelletIa, "IA Fuel Pellet")
         addItem(NTechItems.rbmkPelletLm, "LM Fuel Pellet")
         addItem(NTechItems.rbmkPelletFeU, "FeU Fuel Pellet")
+        addItem(NTechItems.rbmkPelletFePu, "FePu Fuel Pellet")
 
         addItem(NTechItems.emptyRBMKRod, "Empty RBMK Fuel Rod")
         addItem(NTechItems.rbmkRodBalefire, "Balefire RBMK Fuel Rod")
@@ -738,6 +740,7 @@ class EnUsLanguageProvider(dataGenerator: DataGenerator) : NuclearLanguageProvid
         addItem(NTechItems.rbmkRodIa, "IA RBMK Neutron Source")
         addItem(NTechItems.rbmkRodLm, "LM RBMK Fuel Rod")
         addItem(NTechItems.rbmkRodFeU, "FeU RBMK Fuel Rod")
+        addItem(NTechItems.rbmkRodFePu, "FePu RBMK Fuel Rod")
 
         addItem(NTechItems.meltdownTool, "Dyatlov Instant Meltdown Applicator")
 

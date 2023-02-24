@@ -174,6 +174,7 @@ class NuclearItemModelProvider(
         simpleItem(NTechItems.yharoniteBillet.get())
         simpleItem(NTechItems.zirconiumBillet.get())
         simpleItem(NTechItems.feuBillet.get())
+        simpleItem(NTechItems.fepuBillet.get())
 
         simpleItem(NTechItems.asbestosSheet.get())
         simpleItem(NTechItems.coke.get())
@@ -737,6 +738,7 @@ class NuclearItemModelProvider(
         simpleItem(NTechItems.rbmkRodIa.get())
         simpleItem(NTechItems.rbmkRodLm.get())
         simpleItem(NTechItems.rbmkRodFeU.get())
+        simpleItem(NTechItems.rbmkRodFePu.get())
 
         simpleItem(NTechItems.meltdownTool.get())
 
