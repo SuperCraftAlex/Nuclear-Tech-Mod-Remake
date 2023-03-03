@@ -177,6 +177,8 @@ class BlockLoots : BlockLoot() {
         dropSelf(NTechBlocks.berylliumDecoBlock.get())
         dropSelf(NTechBlocks.asbestosRoof.get())
         dropSelf(NTechBlocks.hazmatBlock.get())
+        dropSelf(NTechBlocks.uohssBlock.get())
+
         add(NTechBlocks.meteorite.get()) { createSilkTouchDispatchTable(it, EntryGroup.list(LootItem.lootTableItem(NTechItems.dalekaniumPlate.get()), LootItem.lootTableItem(NTechBlockItems.meteorite.get()).setWeight(9))) }
         add(NTechBlocks.meteoriteCobblestone.get()) { createSingleItemTableWithSilkTouch(it, NTechItems.meteoriteFragment.get()) }
         add(NTechBlocks.brokenMeteorite.get()) { createSingleItemTableWithSilkTouch(it, NTechItems.meteoriteFragment.get()) }

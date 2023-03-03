@@ -39,5 +39,6 @@ class MainPlugin : ModPlugin {
         registerArmorRepairItem(NTechItems.starmetalIngot, 1F)
         registerMaterial(NuclearArmorMaterials.combineSteel, 1.3F)
         registerMaterial(NuclearArmorMaterials.schrabidium, 3F)
+        registerMaterial(NuclearArmorMaterials.uohss, 1.5F)
     }
 }

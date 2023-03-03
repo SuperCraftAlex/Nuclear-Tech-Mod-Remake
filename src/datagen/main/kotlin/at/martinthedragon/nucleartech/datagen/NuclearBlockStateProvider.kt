@@ -160,6 +160,8 @@ class NuclearBlockStateProvider(
         simpleBlock(NTechBlocks.hotMeteoriteCobblestone.get())
         simpleBlock(NTechBlocks.meteoriteTreasure.get())
 
+        simpleBlock(NTechBlocks.uohssBlock.get())
+
         simpleBlock(NTechBlocks.decoRbmkBlock.get())
         simpleBlock(NTechBlocks.decoRbmkSmoothBlock.get())
 
@@ -495,6 +497,8 @@ class NuclearBlockStateProvider(
         copiedBlockItem(NTechBlocks.electricFurnace.get())
         copiedBlockItem(NTechBlocks.shredder.get())
         copiedBlockItem(NTechBlocks.volcanoCore.get())
+
+        copiedBlockItem(NTechBlocks.uohssBlock.get())
     }
 
     private val blockTransformsModel = models().getExistingFile(mcLoc("block/block"))

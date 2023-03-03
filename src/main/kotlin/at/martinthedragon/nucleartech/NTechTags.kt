@@ -97,6 +97,8 @@ object NTechTags {
         val STORAGE_BLOCKS_WEIDANIUM = forgeTag("storage_blocks/weidanium")
         val STORAGE_BLOCKS_YELLOWCAKE = forgeTag("storage_blocks/yellow_cake_uranium")
 
+        val STORAGE_BLOCKS_UOHSS = forgeTag("storage_blocks/uohss")
+
         val SAND_OIL = forgeTag("sand/oil")
         val GLOWING_MUSHROOM_GROW_BLOCK = tag("glowing_mushroom_grow_block")
         val GLOWING_MYCELIUM_SPREADABLE = tag("glowing_mycelium_spreadable")
@@ -263,6 +265,8 @@ object NTechTags {
         val INGOTS_WEIDANIUM = forgeTag("ingots/weidanium")
 
         val INGOTS_FEU = forgeTag("ingots/feu")
+        val INGOTS_FEPU = forgeTag("ingots/fepu")
+        val INGOTS_UOHSS = forgeTag("ingots/uohss")
 
         val BILLETS = forgeTag("billets")
         val BILLETS_ACTINIUM = forgeTag("billets/actinium")

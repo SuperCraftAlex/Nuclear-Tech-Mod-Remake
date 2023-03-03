@@ -27,6 +27,8 @@ object NuclearArmorMaterials {
         NTechItems.fireProximityCloth.get()) })
     val schrabidium: ArmorMaterial = Material(name("schrabidium"), 100, intArrayOf(3, 8, 6, 3), 50, SoundEvents.ARMOR_EQUIP_IRON, 7F, .4F, lazy { Ingredient.of(
         NTechItems.schrabidiumIngot.get()) })
+    val uohss: ArmorMaterial = Material(name("uohss"), 50, intArrayOf(3, 8, 6, 3), 6, SoundEvents.ARMOR_EQUIP_IRON, 7F, .4F, lazy { Ingredient.of(
+        NTechItems.uohssIngot.get()) })
 
     private fun name(name: String) = "${NuclearTech.MODID}:$name"
 

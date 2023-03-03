@@ -122,6 +122,8 @@ class EnUsLanguageProvider(dataGenerator: DataGenerator) : NuclearLanguageProvid
         addBlock(NTechBlocks.steelScaffold, "Steel Scaffold")
         addBlock(NTechBlocks.steelGrate, "Steel Grate")
 
+        addBlock(NTechBlocks.uohssBlock, "Benicium Block")
+
         addBlock(NTechBlocks.glowingMushroom, "Glowing Mushroom")
         addBlock(NTechBlocks.glowingMushroomBlock, "Glowing Mushroom Block")
         addBlock(NTechBlocks.glowingMushroomStem, "Glowing Mushroom Stem")
@@ -238,7 +240,10 @@ class EnUsLanguageProvider(dataGenerator: DataGenerator) : NuclearLanguageProvid
         addItemDesc(NTechItems.euphemiumIngot, "A very special and yet strange element")
         addItem(NTechItems.whitePhosphorusIngot, "White Phosphorus Bar")
 
+        addItem(NTechItems.feuIngot, "FeU-Ingot")
         addItem(NTechItems.fepuIngot, "FePu-Ingot")
+        addItem(NTechItems.uohssIngot, "Benicium-Ingot")
+        addItemDesc(NTechItems.uohssIngot, "-> UoHSS")
 
         addItem(NTechItems.semtexBar, "Semtex Bar")
         addItemDesc(

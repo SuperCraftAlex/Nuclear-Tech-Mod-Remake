@@ -128,6 +128,7 @@ object Materials {
 
     val feu = add(MG(ingot = I.feuIngot, billet = I.feuBillet))
     val fepu = add(MG(ingot = I.fepuIngot, billet = I.fepuBillet))
+    val uohss = add(MG(ingot = I.uohssIngot))
 
     private fun add(group: MaterialGroup): MaterialGroup {
         allMaterials += group

@@ -103,6 +103,7 @@ class HarvestabilityProvider(dataGenerator: DataGenerator, existingFileHelper: E
             NTechBlocks.oilPipe,
             NTechBlocks.decoRbmkBlock,
             NTechBlocks.decoRbmkSmoothBlock,
+            NTechBlocks.uohssBlock,
         )
         tag(BlockTags.MINEABLE_WITH_SHOVEL).add(
             NTechBlocks.oilSand,

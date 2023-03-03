@@ -111,6 +111,8 @@ class DeDeLanguageProvider(dataGenerator: DataGenerator) : NuclearLanguageProvid
         addBlock(NTechBlocks.steelScaffold, "Stahlgerüst")
         addBlock(NTechBlocks.steelGrate, "Stahlgitter")
 
+        addBlock(NTechBlocks.uohssBlock, "Benicium-Block")
+
         addBlock(NTechBlocks.glowingMushroom, "Leuchtender Pilz")
         addBlock(NTechBlocks.glowingMushroomBlock, "Leuchtender Pilzblock")
         addBlock(NTechBlocks.glowingMushroomStem, "Leuchtender Pilzstamm")
@@ -251,6 +253,8 @@ class DeDeLanguageProvider(dataGenerator: DataGenerator) : NuclearLanguageProvid
         addItem(NTechItems.whitePhosphorusIngot, "Weiße Phosphortafel")
         addItem(NTechItems.feuIngot, "FeU-Barren")
         addItem(NTechItems.fepuIngot, "FePu-Barren")
+        addItem(NTechItems.uohssIngot, "Benicium-Barren")
+        addItemDesc(NTechItems.uohssIngot, "-> UoHSS")
 
         addItem(NTechItems.semtexBar, "Semtextafel")
         addItemDesc(

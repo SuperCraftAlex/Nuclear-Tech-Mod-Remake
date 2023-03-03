@@ -122,6 +122,7 @@ object NTechItems {
     val whitePhosphorusIngot = ITEMS.registerK("white_phosphorus_ingot") { Item(PARTS_TAB_PROP) }
     val fepuIngot = ITEMS.registerK("fepu_ingot") { Item(PARTS_TAB_PROP) }
     val feuIngot = ITEMS.registerK("feu_ingot") { Item(PARTS_TAB_PROP) }
+    val uohssIngot = ITEMS.registerK("uohss_ingot") { Item(PARTS_TAB_PROP) }
 
     val semtexBar = ITEMS.registerK("semtex_bar") { AutoTooltippedItem(Properties().tab(CreativeTabs.Parts).food(FoodProperties.Builder().nutrition(4).saturationMod(0.5f).build())) }
     val lithiumCube = ITEMS.registerK("lithium_cube") { Item(PARTS_TAB_PROP) }
@@ -872,6 +873,12 @@ object NTechItems {
     val schrabidiumChestplate = ITEMS.registerK("schrabidium_chestplate") { FullSetBonusArmorItem(NuclearArmorMaterials.schrabidium, EquipmentSlot.CHEST, FullSetBonusArmorItem.FullSetBonus.copyFrom(schrabidiumHelmet.get()), Properties().tab(CreativeTabs.Consumables)) }
     val schrabidiumLeggings = ITEMS.registerK("schrabidium_leggings") { FullSetBonusArmorItem(NuclearArmorMaterials.schrabidium, EquipmentSlot.LEGS, FullSetBonusArmorItem.FullSetBonus.copyFrom(schrabidiumHelmet.get()), Properties().tab(CreativeTabs.Consumables)) }
     val schrabidiumBoots = ITEMS.registerK("schrabidium_boots") { FullSetBonusArmorItem(NuclearArmorMaterials.schrabidium, EquipmentSlot.FEET, FullSetBonusArmorItem.FullSetBonus.copyFrom(schrabidiumHelmet.get()), Properties().tab(CreativeTabs.Consumables)) }
+
+    val uohssHelmet = ITEMS.registerK("uohss_helmet") { FullSetBonusArmorItem(NuclearArmorMaterials.uohss, EquipmentSlot.HEAD, FullSetBonusArmorItem.FullSetBonus(damageCap = 4F, damageMod = .1F, fireproof = true), Properties().tab(CreativeTabs.Consumables)) }
+    val uohssChestplate = ITEMS.registerK("uohss_chestplate") { FullSetBonusArmorItem(NuclearArmorMaterials.uohss, EquipmentSlot.CHEST, FullSetBonusArmorItem.FullSetBonus.copyFrom(uohssHelmet.get()), Properties().tab(CreativeTabs.Consumables)) }
+    val uohssLeggings = ITEMS.registerK("uohss_leggings") { FullSetBonusArmorItem(NuclearArmorMaterials.uohss, EquipmentSlot.LEGS, FullSetBonusArmorItem.FullSetBonus.copyFrom(uohssHelmet.get()), Properties().tab(CreativeTabs.Consumables)) }
+    val uohssBoots = ITEMS.registerK("uohss_boots") { FullSetBonusArmorItem(NuclearArmorMaterials.uohss, EquipmentSlot.FEET, FullSetBonusArmorItem.FullSetBonus.copyFrom(uohssHelmet.get()), Properties().tab(CreativeTabs.Consumables)) }
+
 
     val polaroid = ITEMS.registerK("polaroid") { PolaroidItem(Properties().tab(CreativeTabs.Consumables)) }
 

@@ -409,6 +409,8 @@ class NuclearRecipeProvider(generator: DataGenerator) : RecipeProvider(generator
         blastingRecipe(Tags.Items.INGOTS_IRON, NTechTags.Items.NUGGETS_URANIUM, NTechItems.feuIngot.get(), 2F, 1, "iron_ingot", "uranium_nugget", consumer)
         blastingRecipe(Tags.Items.INGOTS_IRON, NTechTags.Items.NUGGETS_PLUTONIUM, NTechItems.fepuIngot.get(), 2F, 1, "iron_ingot", "plutonium_nugget", consumer)
 
+        blastingRecipe(NTechTags.Items.INGOTS_UNOBTAINIUM, NTechTags.Items.INGOTS_HIGH_SPEED_STEEL, NTechItems.uohssIngot.get(), 2F, 1, "unobtainium_ingot", "highspeedsteel_ingot", consumer)
+
         blastingRecipe(Tags.Items.INGOTS_IRON, Items.COAL, NTechItems.steelIngot.get(), .25F, 2, "iron_ingot", consumer)
         blastingRecipe(Tags.Items.INGOTS_COPPER, Tags.Items.DUSTS_REDSTONE, NTechItems.redCopperIngot.get(), .25F, 2, "copper_ingot", "redstone", consumer)
         blastingRecipe(NTechTags.Items.INGOTS_RED_COPPER, NTechTags.Items.INGOTS_STEEL, NTechItems.advancedAlloyIngot.get(), .5F, 2, "red_copper_ingot", "steel_ingot",consumer)

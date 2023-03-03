@@ -49,7 +49,6 @@ open class RBMKRodRenderer(context: BlockEntityRendererProvider.Context) : RBMKE
             if ((rodItem is RBMKRodItem) && (rodItem.cherenkovColor != null)) {
                 color = rodItem.cherenkovColor
             }
-            println(color)
 
             for (i in 0 until height * 4 - 1) {
                 builder.vertex(matrix4f, -0.5F, -i * 0.25F, -0.5F).color(color.red.toFloat(), color.green.toFloat(), color.blue.toFloat(), intensity).endVertex()

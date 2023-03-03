@@ -110,6 +110,7 @@ class BlockTagProvider(dataGenerator: DataGenerator, existingFileHelper: Existin
         tag(STORAGE_BLOCKS_VERTICIUM).add(NTechBlocks.verticiumBlock)
         tag(STORAGE_BLOCKS_WEIDANIUM).add(NTechBlocks.weidaniumBlock)
         tag(STORAGE_BLOCKS_YELLOWCAKE).add(NTechBlocks.yellowcakeBlock)
+        tag(STORAGE_BLOCKS_UOHSS).add(NTechBlocks.uohssBlock)
         return@with
     }
 

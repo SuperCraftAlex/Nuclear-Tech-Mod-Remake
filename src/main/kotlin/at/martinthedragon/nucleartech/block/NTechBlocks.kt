@@ -155,6 +155,8 @@ object NTechBlocks {
     val asbestosRoof = BLOCKS.registerK("asbestos_roof") { Block(Properties.of(METAL).strength(6f).requiresCorrectToolForDrops().sound(SoundType.METAL)) }
     val hazmatBlock = BLOCKS.registerK("hazmat_block") { Block(Properties.of(WOOL).strength(6f).sound(SoundType.WOOL)) }
 
+    val uohssBlock = BLOCKS.registerK("uohss_block") { Block(Properties.of(METAL).strength(6f).requiresCorrectToolForDrops().sound(SoundType.METAL)) }
+
     val meteorite = BLOCKS.registerK("meteorite") { Block(Properties.of(STONE).strength(15F, 900F).sound(SoundType.STONE)) }
     val meteoriteCobblestone = BLOCKS.registerK("meteorite_cobblestone") { Block(Properties.of(STONE).strength(15F, 900F).sound(SoundType.STONE)) }
     val brokenMeteorite = BLOCKS.registerK("broken_meteorite") { Block(Properties.of(STONE).strength(15F, 900F).sound(SoundType.STONE)) }
