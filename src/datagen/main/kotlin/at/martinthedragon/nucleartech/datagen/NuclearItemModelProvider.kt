@@ -814,6 +814,7 @@ class NuclearItemModelProvider(
         simpleItem(NTechItems.drillMissile.get())
         simpleItem(NTechItems.nuclearMissile.get())
         simpleItem(NTechItems.tectonicMissile.get())
+        simpleItem(NTechItems.meteorRemote.get())
         simpleItem(NTechItems.oilDetector.get())
         simpleItem(NTechItems.rbmkLinker.get())
         simpleItem(NTechItems.geigerCounter.get())
